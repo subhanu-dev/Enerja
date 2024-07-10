@@ -2,7 +2,9 @@
 module.exports = {
   content: ["./dist/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{ Monsfont:['Montserrat','sans serif']}
+    },
   },
   plugins: [],
 }
