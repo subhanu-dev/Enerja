@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
 
 <head>
     <meta charset="UTF-8">
@@ -12,17 +12,18 @@
         rel="stylesheet">
  <script src="https://kit.fontawesome.com/d89352fd46.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="customstyles.css">
 </head>
 
-<body class="bg-black text-white font-Monsfont p-6">
+<body class="bg-black text-white font-Monsfont lg:p-6 overflow-x-hidden ">
 
-    <!-- --------------------------------------------nav bar---------------------------------------------------------------------- -->
+    <!-- --------------------------------------------nav bar----------------------------------------------------------------------------- -->
 
     <nav>
         <div class="flex justify-center items-center ">
-            <h1 class="text-2xl font-bold text-gradient sm:text-3xl md:text-4xl ">ENERJA</h1>
+            <h1 class="text-2xl font-bold text-gradient sm:text-3xl md:text-4xl mt-6 lg:mt-0">ENERJA</h1>
             <div>
-                <svg class="w-8 mx-auto absolute right-10 top-6 md:hidden" xmlns="http://www.w3.org/2000/svg"
+                <svg class="w-8 mx-auto absolute right-6 top-6 md:hidden" xmlns="http://www.w3.org/2000/svg"
                     fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -45,73 +46,133 @@
 
 <!-- ---------------------------------------------------hero------------------------------------------------------------------------- -->
 
-        <div id="hero" class=" mt-16 md:mt-0 grid lg:grid-cols-2 items-center justify-center ">
+        <div id="hero" class=" mt-16 md:mt-0 lg:grid lg:grid-cols-2 items-center justify-center ">
             <!-- <img src="images/desktop_hero.png" alt="lion-background" class="max-w-[80%] mx-auto"> -->
-            <div id="hero-txt" class="lg:self-start lg:mt-36 xl:mt-40 xl:ml-60">
+            <div id="hero-txt" class=" mt-20 lg:self-start lg:mt-36 xl:mt-40 xl:ml-60">
                 <h1
-                    class="text-4xl font-extrabold text-center text-stroke text-black sm:text-5xl  lg:text-6xl xl:text-left">
+                    class="text-4xl font-extrabold text-center text-stroke px-2 lg:z-0 text-black sm:text-5xl  lg:text-6xl  lg:px-0 xl:text-left">
                     Unleash Your Energy,<br> Embrace the
                     Power</h1>
-                <button
-                    class="bg-yellow-500 text-black rounded font-bold p-2 md:p-4 shadow-customorange mx-auto block ; my-6  hover:bg-[#E54331] hover:text-black transition-all duration-300 ease-in hover:border-2 border-black lg:bg-black lg:text-white xl:inline ">TRY
-                    TODAY</button>
-            </div>
+                <a href="#flavors">
+                    <button
+                        class="bg-yellow-500 text-black rounded font-bold p-2 md:p-4 shadow-customorange mx-auto block ; my-6 lg:z-0 hover:bg-[#E54331] hover:text-black transition-all duration-300 ease-in hover:border-2 border-black md:bg-black md:text-white xl:inline " src="#buy">TRY
+                        TODAY</button>
+                </a>
+            </div>           
+               
             <img src="images/enerja_can_desktop_hero.png" alt="enerja-can"
-                class=" absolute top-28 left-6 -z-10 min-w-[250px] mx-w-[350px] md:top-20 lg:static lg:z-10  ">
+                    class=" relative bottom-50 sm-bottom-60 -z-10 min-w-[250px]  lg:block lg:z-10 lg:static">
+           
         </div>
         <img src="images/desktop_hero.png" alt="hero"
-            class="hidden lg:block  lg:w-[95%] xl:w-[80%] absolute top-40 xl:left-40 -z-10">
-        <!-- <img src="images/goldencan.jpg" alt="splash-hero" class="absolute top-24 -z-10 lg:hidden"> -->
-    </main>
+            class="hidden md:block lg:w-[95%] xl:w-[80%] absolute top-40 xl:left-40 -z-20">         
 
+    </main>
+    
 <!------------------------------------------------ Description section -srilanka's premier ---------------------------------------------------------- -->
   
-<section id="description" class="max-w-[70%] mx-auto mt-12">
-        <h2 class="text-4xl text-center font-bold">
+<section id="description" class="max-w-[90%] lg:max-w-[70%] mx-auto lg:mt-36 24 xl:mt-12">
+        <h2 class="text-2xl md:text-4xl text-center font-bold">
             Sri Lanka’s Premier Energy Drink
         </h2>
-        <p class="text-2xl text-center mt-8">
+        <p class="text-xl md:text-2xl text-center mt-8">
             Discover the power of Enerja, Sri Lanka's premier energy drink designed to invigorate your body and
-            mind.crafted to help you overcome the toughest challenges and keep you energized throughout the day.
-            Enerja is your go-to source of energy,<span class="uppercase block text-center">All Day -Every Day.</span>
+            mind. Crafted to help you overcome the toughest challenges and keep you energized throughout the day.
+            Enerja is your go-to source of energy,<span class="uppercase block text-center">All Day - Every Day.</span>
         </p>
     </section>
 
-    <div id="Why" class="bg-whiteopacity mt-28 max-w-[80%]  mx-auto p-8 border-yellow-500 border-2 rounded-xl ">
-        <h3 class="text-center text-3xl font-bold mt-4">WHY ENERJA?</h3>
-        <ul class="p-8">
-            <li class="mb-2"><i class="fa-solid fa-circle-dot text-yellow-500"></i> <p class="text-2xl inline  font-semibold">Stay Alert</p><p>improve focus and concentration, perfect for long days and nights.</p></li>
-            <li class="mb-2"><i class="fa-solid fa-circle-dot text-yellow-500"></i><p class="text-2xl inline font-semibold">Boost Your Energy</p> <p>Packed with essential vitamins and minerals to enhance your physical performance.</p></li>
-            <li class="mb-2"><i class="fa-solid fa-circle-dot text-yellow-500"></i><p class="text-2xl inline font-semibold">Natural Ingredients</p> <p>carefully selected natural ingredients to ensure you get the best energy boost without the crash.</p></li>
-            <li><i class="fa-solid fa-circle-dot text-yellow-500"></i><p class="text-2xl inline font-semibold">Refreshing Taste</p> <p>Enjoy a variety of delicious flavors that refresh and energize</p></li>
+<!-----------------------------------------------------------------WHY?------------------------------------------------------------------ -->
+
+    <div id="Why" class="bg-whiteopacity mt-20 md:mt-28 max-w-[80%]  mx-auto p-1 md:p-8 border-yellow-500 border-2 rounded-xl ">
+        <h3 class="text-center text-2xl md:text-3xl font-bold mt-4">WHY ENERJA?</h3>
+        <ul class="p-4 md:p-8">
+
+            <li class="mb-2"><i class="fa-solid fa-circle-dot text-yellow-500 mr-2 md:mr-3"></i> <p class="text-xl md:text-2xl inline  font-semibold">Stay Alert</p><p>Improve focus and concentration, perfect for long days and nights.</p></li>
+            <li class="mb-2"><i class="fa-solid fa-circle-dot text-yellow-500 mr-2 md:mr-3"></i><p class="text-xl md:text-2xl inline font-semibold">Boost Your Energy</p> <p>Packed with essential vitamins and minerals to enhance your physical performance.</p></li>
+            <li class="mb-2"><i class="fa-solid fa-circle-dot text-yellow-500 mr-2 md:mr-3"></i><p class="text-xl md:text-2xl inline font-semibold">Natural Ingredients</p> <p>carefully selected natural ingredients to ensure you get the best energy boost without the crash.</p></li>
+            <li><i class="fa-solid fa-circle-dot text-yellow-500 mr-2 md:mr-3"></i><p class=" text-xl md:text-2xl inline font-semibold">Refreshing Taste</p> <p>Enjoy a variety of delicious flavors that refresh and energize</p></li>
+        
         </ul>
        
     </div>
 
-    <img src="images/enerja_can.png" alt="enerja-can" class="absolute  -rotate-25 max-h-[800px]">
+    <!-- <img src="images/enerja_can.png" alt="enerja-can" class="absolute  -rotate-25 max-h-[800px]">  -->
 
 
 
 <!------------------------------------------------------------CTA2-------------------------------------------------------------------------------- -->
+ 
+<div id="des2" class="max-w-[90%] md:max-w-[70%] relative mt-24  md:mt-32 lg:mt-44 mx-auto "> 
 
-<div id="des2"> 
-    <img src="images/lemon.png" alt="lemon">  
-        <h3 class="font-bold text-4xl text-center">
-            unique blend of natural ingredients, local flavors, and scientifically proven energy-boosting components.
+    <img src="images/lemon.png" alt="lemon" class="absolute  max-w-20 -top-10 md:-left-16 lg:max-w-40 lg:-top-24">  
+        <h3 class="font-bold  text-2xl md:text-4xl text-center">
+            Unique blend of natural ingredients, local flavors, and scientifically proven energy-boosting components.
         </h3>
-        <img src="images/ginger.png" alt="ginger">
-</div>
+        <img src="images/ginger.png" alt="ginger" class="absolute max-w-20  -bottom-10 right-0 lg:max-w-40 lg:-bottom-16">
+</div> 
 
 
 <!-- -------------------------------------------------------Flavors------------------------------------------------------------------------- -->
-<section id="flavors">
+<section id="flavors" class="mt-28 md:mt-36">
     
 <h3 class="text-center text-3xl font-bold">FLAVORS</h3>
-<div id="cards">
+<div id="cards" class="card flex flex-col gap-6 mt-12 md:max-w-[50%] relative"> 
 
+    <div class="flex bg-white items-center"><img src="images/lemonlightening_can.png" alt="" class="max-w-72  min-w-28 w-full"> <p class="text-black px-6 min-w-40 font-semibold">Lemon Lightening</p></div>
+    <div class="flex bg-white items-center"><img src="images/can2tropical.png" alt="enerja-flavors-img "class="max-w-72 min-w-28 w-full"><p class="text-black px-6 min-w-40 font-semibold">Tropical Coconut</p></div>
+    <div class="flex bg-white items-center"><img src="images/classic_can.png" alt="enerja-flavors-img" class="max-w-72 min-w-28 w-full"><p class="text-black px-6 min-w-40 font-semibold">Classic Zing</p></div>
+
+    <div class="bg-yellow-500 absolute hidden lg:block w-[120%] h-[110%] bottom-20 -left-20 -z-10 rounded-[50%] yellowblur "></div>
+</div>
+
+
+</section>
+
+<!-- --------------------------------------------------------Where to Buy-------------------------------------------------------------------- -->
+<section id="buy" class="mt-24 md:mt-36 max-w-[80%] mx-auto">
+    
+    <h3 class="uppercase text-center text-3xl font-bold ">Where to Buy</h3>
+<div class="md:bg-whiteopacity border-yellow-500 md:border-2 p-2 md:p-6 rounded-lg mt-8">
+    <div id="buytitle" class="flex items-center justify-center">
+        <p class="text-center">Available in all leading Supermarkets Islandwide</p><img src="images/sri-lanka.png" alt="srilanka images" class="max-w-10">
+    </div>
+    <div class="flex gap-2 md:gap-5 justify-center mt-8">
+        <img src="images/cargills.png" alt="cargills" class="max-w-40 w-full">
+        <img src="images/keels.png" alt="keeels" class="max-w-40 w-full">
+        <img src="images/spar.png" alt="spar" class="max-w-40 w-full">
+    </div>
 </div>
 
 </section>
+
+<!-- ----------------------------------------------------------contact us------------------------------------------------------------------- -->
+
+<section id="contact-us" class="md:mt-42 max-w-[80%] mx-auto">
+ <div id="contact-title" class="flex justify-center items-ceter">     
+        <h3 class="text-center">for Orders and Inquiries</h3>
+        <img src="images/power_icon.png" alt="" class=" max-w-10">
+ </div>
+<div class="bg-whiteopacity border-yellow-500 border-2 p-2 md:p-6 rounded-lg mt-8">
+    <div id="contactinfo">
+        <p>Email: contact@enerja.lk</p>
+        <p>Phone: +94 123 456 789</p>
+        <p>Address: 123 Enerja Street, Colombo, Sri Lanka</p>
+
+        <div class="socials">
+            <p>Follow us @</p>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+    </div>
+    <img src="images/can2tropical.png" alt="tropical-enerja-can">
+    
+</div>
+</section>
+
     <script defer src="app.js"></script>
 </body>
 

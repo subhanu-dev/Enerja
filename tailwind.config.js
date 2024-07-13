@@ -11,8 +11,11 @@ module.exports = {
         whiteopacity: "rgba(217,217,217,.2)" 
       },    
       rotate: {
-        '-25': '-25deg',
+        '-25' : '-25deg',
       },
+      blur:{
+       '3000':"3000px",
+      }
     },
   },
   plugins: [],

@@ -20,3 +20,10 @@
     2px 2px 0 orange;
 }
 
+.card{
+  @apply max-w-[80%] mx-auto ;
+}
+
+.yellowblur{
+filter:blur(400px);
+}
