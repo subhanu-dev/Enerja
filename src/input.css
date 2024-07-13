@@ -20,6 +20,15 @@
     2px 2px 0 orange;
 }
 
+.black-stroke{
+  text-shadow: 
+  -1px -1px 0 black,  
+  1px -1px 0 black,
+  -1px 1px 0 black,
+  1px 1px 0 black;
+}
+
+
 .card{
   @apply max-w-[80%] mx-auto ;
 }
