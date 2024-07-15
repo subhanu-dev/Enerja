@@ -1,5 +1,4 @@
 // we are making it!
-console.log("yess utto yes!")
 
 /////////////////////////////////navbar scroller
 
@@ -20,3 +19,24 @@ links.forEach(function (link) {
     });
 
 })
+
+/*********************************** hamburger menu*************************************************/
+
+const hamburger=document.querySelector('#hamburger-menu');
+
+const menu=document.getElementById('small-nav');
+
+// const smallnav_classes = smallnav.classList;
+
+// console.log(smallnav_classes);
+
+hamburger.addEventListener('click', function(){
+
+    hamburger.classList.toggle('change');
+    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    
+
+}
+    
+)
+

@@ -36,3 +36,17 @@
 .yellowblur{
 filter:blur(400px);
 }
+
+.change #line1{
+  transform:rotate(45deg) translateY(10px)
+}
+
+
+.change #line2{
+  opacity:0;
+}
+
+.change #line3{
+  transform:rotate(-45deg) translateY(-10px)
+}
+

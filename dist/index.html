@@ -10,9 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
- <script src="https://kit.fontawesome.com/d89352fd46.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d89352fd46.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="customstyles.css">
+
+
 </head>
 
 <body class="bg-black text-white font-Monsfont lg:px-6 lg:pt-6 overflow-x-hidden ">
@@ -22,27 +24,39 @@
     <nav>
         <div class="flex justify-center items-center ">
             <h1 class="text-2xl font-bold text-gradient sm:text-3xl md:text-4xl mt-6 lg:mt-0">ENERJA</h1>
-            <div class="absolute z-50 top-5 right-5 hover:cursor-pointer">
-             <div id="line1" class="w-6 h-1 bg-white my-1 click:translateY-2"></div>
-             <div id="line2" class="w-6 h-1 bg-white my-1"></div>
-             <div id="line3" class="w-6 h-1 bg-white my-1"></div>
+
+            <div class="absolute z-50 top-6 right-7 hover:cursor-pointer md:hidden  duration-300" id="hamburger-menu">
+
+                <div id="line1" class="w-6 h-1 bg-white my-1 duration-300"></div>
+                <div id="line2" class="w-6 h-1 bg-white my-1 duration-300"></div>
+                <div id="line3" class="w-6 h-1 bg-white my-1 duration-300"></div>
             </div>
-        </div>
+
         </div>
 
+
         <div id="navbar">
-            <ul class=" hidden text-xl font-bold  justify-center gap-16 my-6 md:flex">
+            <ul class="hidden items-center text-center  text-xl font-bold  justify-center gap-16 my-6 md:flex">
 
                 <li class=" hover:text-yellow-500 black-stroke"> <a href="#Why">WHY ENERJA?</a></li>
                 <li class=" hover:text-yellow-500 black-stroke"><a href="#flavors">FLAVORS!</a></li>
                 <li class=" hover:text-yellow-500 black-stroke"> <a href="#buy">WHERE TO BUY?</a></li>
 
             </ul>
+
+            <ul class=" hidden  bg-whiteopacity px-6  flex-col text-lg font-bold  gap-3 my-6 p-4 " id="small-nav">
+
+                <li class=" hover:text-yellow-500 black-stroke"> <a href="#Why">WHY ENERJA?</a></li>
+                <li class=" hover:text-yellow-500 black-stroke"><a href="#flavors">FLAVORS!</a></li>
+                <li class=" hover:text-yellow-500 black-stroke"> <a href="#buy">WHERE TO BUY?</a></li>
+
+            </ul>
+
         </div>
     </nav>
     <main>
 
-<!-- ---------------------------------------------------hero------------------------------------------------------------------------- -->
+        <!-- ---------------------------------------------------hero------------------------------------------------------------------------- -->
 
         <div id="hero" class=" mt-16 md:mt-0 lg:grid lg:grid-cols-2 items-center justify-center ">
             <!-- <img src="images/desktop_hero.png" alt="lion-background" class="max-w-[80%] mx-auto"> -->
@@ -53,25 +67,27 @@
                     Power</h1>
                 <a href="#flavors">
                     <button
-                        class="bg-yellow-500 text-black rounded font-bold p-2 md:p-4 shadow-customorange mx-auto block ; my-6 lg:z-0 hover:bg-[#E54331] hover:text-black transition-all duration-300 ease-in hover:border-2 border-black md:bg-black md:text-white xl:inline " src="#buy">TRY
+                        class="bg-yellow-500 text-black rounded font-bold p-2 md:p-4 shadow-customorange mx-auto block ; my-6 lg:z-0 hover:bg-[#E54331] hover:text-black transition-all duration-300 ease-in hover:border-2 border-black md:bg-black md:text-white xl:inline "
+                        src="#buy">TRY
                         TODAY</button>
                 </a>
-            </div>           
-               
+            </div>
+
             <img src="images/enerja_can_desktop_hero.png" alt="enerja-can"
-                    class=" relative bottom-50 sm-bottom-60 -z-10 min-w-[250px]  lg:block lg:z-10 lg:static">
-           
+                class=" relative bottom-50 sm-bottom-60 -z-10 min-w-[250px]  lg:block lg:z-10 lg:static">
+
         </div>
         <img src="images/desktop_hero.png" alt="hero"
-            class="hidden lg:block lg:w-[95%] xl:w-[80%] absolute top-40 xl:left-40 -z-20">  
+            class="hidden lg:block lg:w-[95%] xl:w-[80%] absolute top-40 xl:left-40 -z-20">
 
-            <img src="images/image.png" alt="can-in-colombo" class="absolute -z-20 top-20 hidden sm:block lg:hidden rotate-12 border-yellow-400 border-b-4 border-t-4 border-l-8 border-r-2">       
+        <img src="images/image.png" alt="can-in-colombo"
+            class="absolute -z-20 top-20 hidden sm:block lg:hidden rotate-12 border-yellow-400 border-b-4 border-t-4 border-l-8 border-r-2">
 
     </main>
-    
-<!------------------------------------------------ Description section -srilanka's premier ---------------------------------------------------------- -->
-  
-<section id="description" class="max-w-[90%] lg:max-w-[70%] mx-auto lg:mt-36 24 xl:mt-12">
+
+    <!------------------------------------------------ Description section -srilanka's premier ---------------------------------------------------------- -->
+
+    <section id="description" class="max-w-[90%] lg:max-w-[70%] mx-auto lg:mt-36 24 xl:mt-12">
         <h2 class="text-2xl md:text-4xl text-center font-bold">
             Sri Lanka’s Premier Energy Drink
         </h2>
@@ -82,101 +98,136 @@
         </p>
     </section>
 
-<!-----------------------------------------------------------------WHY?------------------------------------------------------------------ -->
+    <!-----------------------------------------------------------------WHY?------------------------------------------------------------------ -->
 
-    <div id="Why" class="bg-whiteopacity mt-20 md:mt-28 max-w-[80%]  mx-auto p-1 md:p-8 border-yellow-500 border-2 rounded-xl ">
+    <div id="Why"
+        class="bg-whiteopacity mt-20 md:mt-28 max-w-[80%]  mx-auto p-1 md:p-8 border-yellow-500 border-2 rounded-xl ">
         <h3 class="text-center text-2xl md:text-3xl font-bold mt-4">WHY ENERJA?</h3>
         <ul class="p-4 md:p-8">
 
-            <li class="mb-2"><i class="fa-solid fa-circle-dot text-yellow-500 mr-2 md:mr-3"></i> <p class="text-xl md:text-2xl inline  font-semibold">Stay Alert</p><p>Improve focus and concentration, perfect for long days and nights.</p></li>
-            <li class="mb-2"><i class="fa-solid fa-circle-dot text-yellow-500 mr-2 md:mr-3"></i><p class="text-xl md:text-2xl inline font-semibold">Boost Your Energy</p> <p>Packed with essential vitamins and minerals to enhance your physical performance.</p></li>
-            <li class="mb-2"><i class="fa-solid fa-circle-dot text-yellow-500 mr-2 md:mr-3"></i><p class="text-xl md:text-2xl inline font-semibold">Natural Ingredients</p> <p>carefully selected natural ingredients to ensure you get the best energy boost without the crash.</p></li>
-            <li><i class="fa-solid fa-circle-dot text-yellow-500 mr-2 md:mr-3"></i><p class=" text-xl md:text-2xl inline font-semibold">Refreshing Taste</p> <p>Enjoy a variety of delicious flavors that refresh and energize</p></li>
-        
+            <li class="mb-2"><i class="fa-solid fa-circle-dot text-yellow-500 mr-2 md:mr-3"></i>
+                <p class="text-xl md:text-2xl inline  font-semibold">Stay Alert</p>
+                <p>Improve focus and concentration, perfect for long days and nights.</p>
+            </li>
+            <li class="mb-2"><i class="fa-solid fa-circle-dot text-yellow-500 mr-2 md:mr-3"></i>
+                <p class="text-xl md:text-2xl inline font-semibold">Boost Your Energy</p>
+                <p>Packed with essential vitamins and minerals to enhance your physical performance.</p>
+            </li>
+            <li class="mb-2"><i class="fa-solid fa-circle-dot text-yellow-500 mr-2 md:mr-3"></i>
+                <p class="text-xl md:text-2xl inline font-semibold">Natural Ingredients</p>
+                <p>carefully selected natural ingredients to ensure you get the best energy boost without the crash.</p>
+            </li>
+            <li><i class="fa-solid fa-circle-dot text-yellow-500 mr-2 md:mr-3"></i>
+                <p class=" text-xl md:text-2xl inline font-semibold">Refreshing Taste</p>
+                <p>Enjoy a variety of delicious flavors that refresh and energize</p>
+            </li>
+
         </ul>
-       
+
     </div>
 
     <!-- <img src="images/enerja_can.png" alt="enerja-can" class="absolute  -rotate-25 max-h-[800px]">  -->
 
 
 
-<!------------------------------------------------------------CTA2-------------------------------------------------------------------------------- -->
- 
-<div id="des2" class="max-w-[90%] md:max-w-[70%] relative mt-24  md:mt-32 lg:mt-44 mx-auto "> 
+    <!------------------------------------------------------------CTA2-------------------------------------------------------------------------------- -->
 
-    <img src="images/lemon.png" alt="lemon" class="absolute  max-w-20 -top-10 md:-left-16 lg:max-w-40 lg:-top-24">  
+    <div id="des2" class="max-w-[90%] md:max-w-[70%] relative mt-24  md:mt-32 lg:mt-44 mx-auto ">
+
+        <img src="images/lemon.png" alt="lemon" class="absolute  max-w-20 -top-10 md:-left-16 lg:max-w-40 lg:-top-24">
         <h3 class="font-bold  text-2xl md:text-4xl text-center">
             Unique blend of natural ingredients, local flavors, and scientifically proven energy-boosting components.
         </h3>
-        <img src="images/ginger.png" alt="ginger" class="absolute max-w-20  -bottom-10 right-0 lg:max-w-40 lg:-bottom-16">
-</div> 
-
-
-<!-- -------------------------------------------------------Flavors------------------------------------------------------------------------- -->
-<section id="flavors" class="mt-28 md:mt-36">
-    
-<h3 class="text-center text-2xl md:text-3xl font-bold">FLAVORS</h3>
-<div id="cards" class="card flex flex-col gap-6 mt-12 md:max-w-[50%] relative"> 
-
-    <div class="flex bg-white items-center"><img src="images/lemonlightening_can.png" alt="" class="max-w-72  min-w-28 w-full"> <p class="text-black px-6 min-w-40 font-semibold">Lemon Lightening</p></div>
-    <div class="flex bg-white items-center"><img src="images/can2tropical.png" alt="enerja-flavors-img "class="max-w-72 min-w-28 w-full"><p class="text-black px-6 min-w-40 font-semibold">Tropical Coconut</p></div>
-    <div class="flex bg-white items-center"><img src="images/classic_can.png" alt="enerja-flavors-img" class="max-w-72 min-w-28 w-full"><p class="text-black px-6 min-w-40 font-semibold">Classic Zing</p></div>
-
-    <div class="bg-yellow-500 absolute hidden lg:block w-[120%] h-[110%] bottom-20 -left-20 -z-10 rounded-[50%] yellowblur "></div>
-</div>
-
-
-</section>
-
-<!-- --------------------------------------------------------Where to Buy-------------------------------------------------------------------- -->
-<section id="buy" class="mt-24 md:mt-36 max-w-[80%] mx-auto">
-    
-    <h3 class="uppercase text-center text-2xl md:text-3xl font-bold ">Where to Buy</h3>
-<div class="md:bg-whiteopacity border-yellow-500 md:border-2 p-2 md:p-6 rounded-lg mt-8">
-    <div id="buytitle" class="flex items-center justify-center">
-        <p class="text-center font-semibold">Available in all leading Supermarkets Islandwide</p><img src="images/sri-lanka.png" alt="srilanka images" class="max-w-10">
+        <img src="images/ginger.png" alt="ginger"
+            class="absolute max-w-20  -bottom-10 right-0 lg:max-w-40 lg:-bottom-16">
     </div>
-    <div class="flex gap-2 md:gap-5 justify-center mt-8">
-        <img src="images/cargills.png" alt="cargills" class="max-w-40 w-full">
-        <img src="images/keels.png" alt="keeels" class="max-w-40 w-full">
-        <img src="images/spar.png" alt="spar" class="max-w-40 w-full">
-    </div>
-</div>
 
-</section>
 
-<!-- ----------------------------------------------------------contact us------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------Flavors------------------------------------------------------------------------- -->
+    <section id="flavors" class="mt-28 md:mt-36">
 
-<section id="contact-us" class="md:mt-60 mt-32 max-w-[80%] mx-auto relative">
- <div id="contact-title" class="flex justify-center items-ceter">     
-        <h3 class="uppercase text-center text-2xl  md:text-3xl font-bold ">for Orders and Inquiries</h3>
-        <img src="images/power_icon.png" alt="" class=" hidden md:block max-w-10 ml-4">
- </div>
-<div class="bg-whiteopacity border-yellow-500 border-2 p-2 md:p-6 rounded-lg mt-4 md:mt-8 flex justify-between">
-    <div id="contactinfo">
-        <p class="my-2">Email: contact@enerja.lk</p>
-        <p class="my-2">Phone: +94 123 456 789</p>
-        <p class="my-2">Address: 123 Enerja Street, Colombo, Sri Lanka</p>
+        <h3 class="text-center text-2xl md:text-3xl font-bold">FLAVORS</h3>
+        <div id="cards" class="card flex flex-col gap-6 mt-12 md:max-w-[50%] relative">
 
-        <div id="socials" class="mt-8">
-            <p class="font-semibold">Follow us @</p>
-            <i class="fa-brands fa-facebook-f text-yellow-500  mx-1"></i>
-            <i class="fa-brands fa-twitter text-yellow-500 mx-1"></i>
-            <i class="fa-brands fa-square-instagram text-yellow-500 mx-1"></i>
-            <i class="fa-brands fa-linkedin-in text-yellow-500 mx-1"></i>
-            <i class="fa-brands fa-youtube text-yellow-500 mx-1"></i>
+            <div class="flex bg-white items-center"><div id="imgcontainer1" class="overflow-hidden max-w-72  min-w-28 w-full">
+                <img src="images/lemonlightening_can.png" alt=""
+                        class=" hover:scale-150 duration-500">
+            </div>
+                <p class="text-black px-6 min-w-40 font-semibold">Lemon Lightening</p>
+            </div>
+            <div class="flex bg-white items-center">
+                <div id="imgcontainer2" class="overflow-hidden max-w-72  min-w-28 w-full">
+                <img src="images/can2tropical.png" alt="enerja-flavors-img "
+                    class=" hover:scale-150 duration-500">
+                </div>
+                <p class="text-black px-6 min-w-40 font-semibold">Tropical Coconut</p>
+            </div>
+            <div class="flex bg-white items-center">
+                <div id="imgcontainer2" class="overflow-hidden max-w-72  min-w-28 w-full">
+                    <img src="images/classic_can.png" alt="enerja-flavors-img" class="hover:scale-150 duration-500">
+                </div>
+                <p class="text-black px-6 min-w-40 font-semibold">Classic Zing</p>
+            </div>
+
+            <div
+                class="bg-yellow-500 absolute hidden lg:block w-[120%] h-[110%] bottom-20 -left-20 -z-10 rounded-[50%] yellowblur ">
+            </div>
         </div>
-    </div>
-    <img src="images/can2tropical.png" alt="tropical-enerja-can" class="max-w-72 w-full hidden md:block">
 
-</div>
-<img src="images/redhuecan.png" alt="red-huecan" class="rotate-45 absolute -z-10 -left-80 -top-80 hidden md:block max-w-[700px]">
-</section>
+
+    </section>
+
+    <!-- --------------------------------------------------------Where to Buy-------------------------------------------------------------------- -->
+    <section id="buy" class="mt-24 md:mt-36 max-w-[80%] mx-auto">
+
+        <h3 class="uppercase text-center text-2xl md:text-3xl font-bold ">Where to Buy</h3>
+        <div class="md:bg-whiteopacity border-yellow-500 md:border-2 p-2 md:p-6 rounded-lg mt-8">
+            <div id="buytitle" class="flex items-center justify-center">
+                <p class="text-center font-semibold">Available in all leading Supermarkets Islandwide</p><img
+                    src="images/sri-lanka.png" alt="srilanka images" class="max-w-10">
+            </div>
+            <div class="flex gap-2 md:gap-5 justify-center mt-8">
+                <img src="images/cargills.png" alt="cargills" class="max-w-40 w-full">
+                <img src="images/keels.png" alt="keeels" class="max-w-40 w-full">
+                <img src="images/spar.png" alt="spar" class="max-w-40 w-full">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ----------------------------------------------------------contact us------------------------------------------------------------------- -->
+
+    <section id="contact-us" class="md:mt-60 mt-32 max-w-[80%] mx-auto relative">
+        <div id="contact-title" class="flex justify-center items-ceter">
+            <h3 class="uppercase text-center text-2xl  md:text-3xl font-bold ">for Orders and Inquiries</h3>
+            <img src="images/power_icon.png" alt="" class=" hidden md:block max-w-10 ml-4">
+        </div>
+        <div class="bg-whiteopacity border-yellow-500 border-2 p-2 md:p-6 rounded-lg mt-4 md:mt-8 flex justify-between">
+            <div id="contactinfo">
+                <p class="my-2">Email: contact@enerja.lk</p>
+                <p class="my-2">Phone: +94 123 456 789</p>
+                <p class="my-2">Address: 123 Enerja Street, Colombo, Sri Lanka</p>
+
+                <div id="socials" class="mt-8">
+                    <p class="font-semibold">Follow us @</p>
+                    <i class="fa-brands fa-facebook-f text-yellow-500  mx-1"></i>
+                    <i class="fa-brands fa-twitter text-yellow-500 mx-1"></i>
+                    <i class="fa-brands fa-square-instagram text-yellow-500 mx-1"></i>
+                    <i class="fa-brands fa-linkedin-in text-yellow-500 mx-1"></i>
+                    <i class="fa-brands fa-youtube text-yellow-500 mx-1"></i>
+                </div>
+            </div>
+            <img src="images/can2tropical.png" alt="tropical-enerja-can" class="max-w-72 w-full hidden md:block">
+
+        </div>
+        <img src="images/redhuecan.png" alt="red-huecan"
+            class="rotate-45 absolute -z-10 -left-80 -top-80 hidden md:block max-w-[700px]">
+    </section>
 
     <script defer src="app.js"></script>
 </body>
 <footer class=" mt-20 md:mt-28">
-<p class="my-4 ml-4 text-sm">Copyrights&copy; subhanu-chamaka</p>
+    <p class="my-4 ml-4 text-sm">Copyrights&copy; subhanu-chamaka</p>
 </footer>
+
 </html>
