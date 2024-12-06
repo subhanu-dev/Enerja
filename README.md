@@ -1,9 +1,9 @@
-# Enerja
+# Enerja ⚡
 
 Category : UI/UX & Front End Web Development
 
-Fully Responsive Website design and development featuring a concept Sri Lankan Energy Drink- Enerja. Built as a practice project to learn TailwindCSS with practice.
-There are different designs based on the device viewport to ensure that website looks good on all devices.
+Fully Responsive Website design and development featuring a concept Sri Lankan Energy Drink- Enerja.  <br>
+Built as a practice project to learn TailwindCSS with practice. There are different designs based on the device viewport to ensure that website looks good on all devices.
 
 Known problems: Images need to be further compressed to improve performance.
 
@@ -14,6 +14,7 @@ Tech Stack:
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
+<img src = "images/enerja_can_desktop_hero.png" width="400px" > </img>
 > Live deployment at : https://subhanu-dev.github.io/Enerja/
 
 > Dribbble Design: https://dribbble.com/shots/24476929-Enerja-The-Sri-Lankan-Energy-Drink-Website-UI
