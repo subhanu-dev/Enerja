@@ -7,7 +7,7 @@ Built as a practice project to learn TailwindCSS with practice. There are differ
 
 Known problems: Images need to be further compressed to improve performance.
 
-Tech Stack: 
+**Tech Stack:** 
 
 ![HTML5](https://img.shields.io/badge/HTML-5C2D91?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
